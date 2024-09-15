@@ -1,0 +1,17 @@
+Metadata-Version: 0.1
+Name: plover-wagtail
+Version: pre-0.1.0
+Summary: Wagtail Steno for Mandarin
+Home-page: https://github.com/dtankers/YanHeng
+Author: Devin T
+Author-email: devin.tankersley@gmail.com
+License: UNKNOWN
+Description: # 鶺鴒中文速錄： Plover+Rime 中文速錄輸入法
+        
+        TODO
+        
+        
+        
+Keywords: plover plover_plugin
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

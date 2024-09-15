@@ -1,0 +1,3 @@
+[plover.system]
+Wagtail = plover_wagtail
+

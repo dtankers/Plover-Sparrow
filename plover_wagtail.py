@@ -1,29 +1,21 @@
 KEYS = (
     '#',
-    'Ƨ-', 'G-', 'B-', 'D-', 'Z-', 'I-', 'U-', 'A-', 'Ǝ-', 'N-', 'У-', 'Ч-',
-    '-Ƨ', '-G', '-B', '-D', '-Z', '-I', '-U', '-A', '-Ǝ', '-N', '-У', '-Ч',
+    'G-', 'B-', 'D-', 'Z-', 'I-', 'U-', 'A-', 'E-', 'N-', 'W-',
+    '*',
+    '-G', '-B', '-D', '-Z', '-I', '-U', '-A', '-E', '-N', '-W',
 )
 
-IMPLICIT_HYPHEN_KEYS = ()
+IMPLICIT_HYPHEN_KEYS = ('*')
 
 SUFFIX_KEYS = ()
 
-NUMBER_KEY = '#'
+NUMBER_KEY = None
 
-NUMBERS = {
-    'N-': '5-',
-    'A-': '4-',
-    'I-': '3-',
-    'D-': '2-',
-    'G-': '1-',
-    '-G': '-6',
-    '-D': '-7',
-    '-I': '-8',
-    '-A': '-9',
-    '-N': '-0',
-}
+NUMBERS = {}
 
-UNDO_STROKE_STENO = "-Ƨ"
+FERAL_NUMBER_KEY = False
+
+UNDO_STROKE_STENO = "*"
 
 ORTHOGRAPHY_RULES = []
 
@@ -33,76 +25,69 @@ ORTHOGRAPHY_WORDLIST = None
 
 KEYMAPS = {
     'Keyboard': {
-        '#': ('1', '2', '3', '4', '5', '6', '7', '8', '9', '0'),
+        '#': ('1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'x'),
 
         'N-': 'q',
-        'У-': 'a',
+        'W-': 'a',
         'A-': 'w',
-        'Ǝ-': 's',
+        'E-': 's',
         'I-': 'e',
         'U-': 'd',
         'D-': 'r',
         'Z-': 'f',
-        'Ƨ-': 't',
-        'Ƨ-': 'g',
         'B-': 'c',
         'G-': 'v',
+        
+        '*': ('t', 'g', 'y', 'h'),
 
         '-G': 'n',
         '-B': 'm',
-        '-Ƨ': 'y',
-        '-Ƨ': 'h',
         '-D': 'u',
         '-Z': 'j',
         '-I': 'i',
         '-U': 'k',
         '-A': 'o',
-        '-Ǝ': 'l',
+        '-E': 'l',
         '-N': 'p',
-        '-У': ';',
-	'-Ч': '[',
-	'-Ч': ''',
+        '-W': ';',
 
         'arpeggiate': 'space',
         'no-op': ('b'),
     },
     'Gemini PR': {
-        '#': ('#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#A', '#B', '#C'),
+        '#': ('#1', '#2', '#3', '#4', '#5', '#6', '#7', '#8', '#9', '#A', '#B', '#C', '-D', '-Z'),
 
         'N-': 'S1-',
-        'У-': 'S2-',
+        'W-': 'S2-',
         'A-': 'T-',
-        'Ǝ-': 'K-',
+        'E-': 'K-',
         'I-': 'P-',
         'U-': 'W-',
         'D-': 'H-',
         'Z-': 'R-',
-        'Ƨ-': '*1',
-        'Ƨ-': '*3',
         'B-': 'A-',
         'G-': 'O-',
+        
+        '*': ('*1', '*2', '*3', '*4'),
 
         '-G': '-E',
         '-B': '-U',
-        '-Ƨ': '*2',
-        '-Ƨ': '*4',
         '-D': '-F',
         '-Z': '-R',
         '-I': '-P',
         '-U': '-B',
         '-A': '-L',
-        '-Ǝ': '-G',
+        '-E': '-G',
         '-N': '-T',
-        '-У': '-S',
-	'-Ч': '-D',
-	'-Ч': '-Z',
+        '-W': '-S',
 
         'no-op': ('res1', 'res2', 'Fn', 'pwr'),
     }
 }
 
-DICTIONARIES_ROOT = './dictionaries/'
+DICTIONARIES_ROOT = 'asset:plover_wagtail:dictionaries'
 DEFAULT_DICTIONARIES = (
-	'wagtail_main.json'
-
-)
+	'wagtail-lightning.json', 
+	'wagtail-adorned.json', 
+	'wagtail-commands.json', 
+	'wagtail-briefs.json')

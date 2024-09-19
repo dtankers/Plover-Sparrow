@@ -87,7 +87,7 @@ KEYMAPS = {
 
 DICTIONARIES_ROOT = 'asset:plover_wagtail:dictionaries'
 DEFAULT_DICTIONARIES = (
-	'wagtail-lightning.json', 
+	'wagtail-briefs.json', 
 	'wagtail-adorned.json', 
 	'wagtail-commands.json', 
-	'wagtail-briefs.json')
+	'wagtail-lighting.json')

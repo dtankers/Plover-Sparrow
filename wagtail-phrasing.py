@@ -84,14 +84,12 @@ ordinal = {
 
 def lookup(key):
     assert len(key) <= LONGEST_KEY
-	
+
     ks = ""
-    km = "*" if ("*" in key) else ""
+    km = ""
     ke = ""
-    kf = ""
     ph = ""
     c = 0
-    d = 0
     nm = 0
 
     for i in key[0]:  # Assuming key is a string
@@ -106,20 +104,20 @@ def lookup(key):
             else:
                 ks += i  # otherwise add the key to the starting half
         if c == 2:
-            if not i in "-*":
+            if i not in "-*":
                 c += 1  # if you find something that isn't "-" or "*", move on
-            elif i in "-*":
+            else:
                 km += i  # add "-*" to middle
         if c == 3:
             ke += i  # add remaining keys to ending
-    
-    if nm == 1:  # if chord has # for number
-    	if ks in ordinal:
-    		if ke in number:
-    			ph += ordinal[ks] + number[ke]
-    		else:
-    			raise KeyError
-        elif ks in number:
+
+    if ((nm == 1) and (ks in ordinal)): # if chord has # and ordinal
+        if ke in number:
+            ph = ordinal[ks] + number[ke]
+        else:
+            raise KeyError           
+    elif nm == 1:
+    	if ks in number:
             ph += number[ks]  # if can find start in number, add to phrase
         elif ks == "":
             ph += ""
@@ -131,7 +129,6 @@ def lookup(key):
             ph += ""
         else:
             raise KeyError
-
     elif ks in preadj:  # if chord has preadj starter
         ph += preadj[ks]  # if can find start in preadj, add to phrase
         if ke in adj:
@@ -140,7 +137,6 @@ def lookup(key):
             ph += enders[ke]  # if can find end in enders, add to phrase
         else:
             raise KeyError
-
     else:
         if ks in starters:
             ph += starters[ks]  # add left side if found in starters

@@ -1,122 +1,141 @@
 LONGEST_KEY = 1
 
 simpleInitials = {
-    "B":"ㄅ",
-    "BDZ":"ㄆ",
-    "GB":"ㄇ",
-    "GBDZ":"ㄈ",
-    "D":"ㄉ",
-    "BD":"ㄊ",
-    "GBD":"ㄋ",
-    "GD":"ㄌ",
-    "G":"ㄍ",
-    "GDZ":"ㄎ",
-    "DZ":"ㄏ",
-    "Z":"ㄓ",
-    "BZ":"ㄔ",
-    "GZ":"ㄕ",
-    "GBZ":"ㄖ",
-    "":""
+    "B": "ㄅ",
+    "BDZ": "ㄆ",
+    "GB": "ㄇ",
+    "GBDZ": "ㄈ",
+    "D": "ㄉ",
+    "BD": "ㄊ",
+    "GBD": "ㄋ",
+    "GD": "ㄌ",
+    "G": "ㄍ",
+    "GDZ": "ㄎ",
+    "DZ": "ㄏ",
+    "Z": "ㄓ",
+    "BZ": "ㄔ",
+    "GZ": "ㄕ",
+    "GBZ": "ㄖ",
+    "": ""
 }
 
 palatalInitials = {
-    "B":"ㄅ",
-    "BDZ":"ㄆ",
-    "GB":"ㄇ",
-    "GBDZ":"ㄈ",
-    "D":"ㄉ",
-    "BD":"ㄊ",
-    "GBD":"ㄋ",
-    "GD":"ㄌ",
-    "GI":"ㄐ",
-    "GDZI":"ㄑ",
-    "DZI":"ㄒ",
-    "ZI":"ㄗ",
-    "BZI":"ㄘ",
-    "GZI":"ㄙ",
-    "":""
+    "B": "ㄅ",
+    "BDZ": "ㄆ",
+    "GB": "ㄇ",
+    "GBDZ": "ㄈ",
+    "D": "ㄉ",
+    "BD": "ㄊ",
+    "GBD": "ㄋ",
+    "GD": "ㄌ",
+    "G": "ㄐ",
+    "GDZ": "ㄑ",
+    "DZ": "ㄒ",
+    "Z": "ㄗ",
+    "BZ": "ㄘ",
+    "GZ": "ㄙ",
+    "": ""
 }
 
 affricateInitials = {
-    "Z":"ㄓ",
-    "BZ":"ㄔ",
-    "GZ":"ㄕ"
+    "Z": "ㄓ",
+    "BZ": "ㄔ",
+    "GZ": "ㄕ"
 }
 
 defaultRimes = {
-    "B":"ㄅㄨ",
-    "BDZ":"ㄆㄨ",
-    "GB":"ㄇㄨ",
-    "GBDZ":"ㄈㄨ",
-    "D":"ㄉㄜ",
-    "BD":"ㄊㄜ",
-    "GBD":"ㄋㄜ",
-    "GD":"ㄌㄜ",
-    "G":"ㄍㄜ",
-    "GDZ":"ㄎㄜ",
-    "DZ":"ㄏㄜ",
-    "GI":"ㄐㄧ",
-    "GDZI":"ㄑㄧ",
-    "DZI":"ㄒㄧ",
-    "Z":"ㄓ",
-    "BZ":"ㄔ",
-    "GZ":"ㄕ",
-    "GBZ":"ㄖ",
-    "ZI":"ㄗ",
-    "BZI":"ㄘ",
-    "GZI":"ㄙ",
-    "":""
+    "B": "ㄅㄨ",
+    "BDZ": "ㄆㄨ",
+    "GB": "ㄇㄨ",
+    "GBDZ": "ㄈㄨ",
+    "D": "ㄉㄜ",
+    "BD": "ㄊㄜ",
+    "GBD": "ㄋㄜ",
+    "GD": "ㄌㄜ",
+    "G": "ㄍㄜ",
+    "GDZ": "ㄎㄜ",
+    "DZ": "ㄏㄜ",
+    "GI": "ㄐㄧ",
+    "GDZI": "ㄑㄧ",
+    "DZI": "ㄒㄧ",
+    "Z": "ㄓ",
+    "BZ": "ㄔ",
+    "GZ": "ㄕ",
+    "GBZ": "ㄖ",
+    "ZI": "ㄗ",
+    "BZI": "ㄘ",
+    "GZI": "ㄙ",
+    "": ""
 }
 
 medials = {
-    "I":"ㄧ",
-    "U":"ㄨ",
-    "IU":"ㄩ",
-    "":""
+    "I": "ㄧ",
+    "U": "ㄨ",
+    "IU": "ㄩ",
+    "": ""
 }
 
 simpleRimes = {
-    "A":"ㄚ",
-    "O":"ㄛ",
-    "E":"ㄜ",
-    "AE":"ㄞ",
-    "ENO":"ㄟ",
-    "AO":"ㄠ",
-    "EO":"ㄡ",
-    "AN":"ㄢ",
-    "N":"ㄣ",
-    "ANO":"ㄤ",
-    "NO":"ㄥ",
-    "EN":"ㄦ",
-    "":""
+    "A": "ㄚ",
+    "O": "ㄨㄛ",
+    "E": "ㄜ",
+    "AE": "ㄞ",
+    "ENO": "ㄟ",
+    "AO": "ㄠ",
+    "EO": "ㄡ",
+    "AN": "ㄢ",
+    "N": "ㄣ",
+    "ANO": "ㄤ",
+    "NO": "ㄥ",
+    "EN": "ㄦ",
+    "AEN": "ㄚㄦ",
+    "": ""
 }
 
 irregularRimes = {
-    "IE":"ㄧㄝ",
-    "IUE":"ㄩㄝ"
+    "IE": "ㄧㄝ",
+    "IUE": "ㄩㄝ",
+    "UE": "ㄨㄟ",
+    "UO": "ㄛ"
 }
 
 irregularSyllables = {
-    "BE":"ㄅㄟ",
-    "BDZE":"ㄆㄟ",
-    "GBE":"ㄇㄟ",
-    "GBDZE":"ㄈㄟ",
-    "GBEN":"ㄇㄜ",
-    "DE":"ㄉㄟ",
-    "BDE":"ㄊㄟ",
-    "GBDE":"ㄋㄟ",
-    "GDE":"ㄌㄟ",
-    "GE":"ㄍㄟ",
-    "GDZE":"ㄎㄟ",
-    "DZE":"ㄏㄟ"
+    "BE": "ㄅㄟ",
+    "BDZE": "ㄆㄟ",
+    "GBE": "ㄇㄟ",
+    "GBDZE": "ㄈㄟ",
+    "GBEN": "ㄇㄜ",
+    "BO": "ㄅㄛ",
+    "BDZO": "ㄆㄛ",
+    "GBO": "ㄇㄛ",
+    "GBDZO": "ㄈㄛ",
+    "DE": "ㄉㄟ",
+    "BDE": "ㄊㄟ",
+    "GBDE": "ㄋㄟ",
+    "GDE": "ㄌㄟ",
+    "GE": "ㄍㄟ",
+    "GDZE": "ㄎㄟ",
+    "DZE": "ㄏㄟ",
+    "ZIUE": "ㄗㄨㄟ",
+    "BZIUE": "ㄘㄨㄟ",
+    "GZIUE": "ㄙㄨㄟ",
+    "ZIU": "ㄗㄨ",
+    "BZIU": "ㄘㄨ",
+    "GZIU": "ㄙㄨ",
+    "ZIUO": "ㄗㄛ",
+    "BZIUO": "ㄘㄛ",
+    "GZIUO": "ㄙㄛ",
+    "ZIE": "ㄗㄜ",
+    "BZIE": "ㄘㄜ",
+    "GZIE": "ㄙㄜ"
 }
 
 tones = {
-    "D":"ˉ",
-    "G":"ˊ",
-    "GB":"ˇ",
-    "B":"ˋ",
-    "Z":"˙"
+    "D": "ˉ",
+    "G": "ˊ",
+    "GB": "ˇ",
+    "B": "ˋ",
+    "Z": "˙"
 }
 
 def lookup(key):
@@ -146,47 +165,44 @@ def lookup(key):
             else:
                 c += 1  # move on otherwise
         if c == 1:
-            if i in "IU":
+            if i in "IUAENO":
                 c += 1  # move on if you hit a medial
             else:
                 kls += i  # otherwise add key to left start
         if c == 2:
             if i in "I":
-                klmi += i # add I to klmi
+                klmi += i  # add I to klmi
+            elif i in "U":
+            	klmu += i # add U to klmu
             else:
-                c += 1 # move on
+                c += 1  # move on
         if c == 3:
-            if i in "U":
-                klmu += i # add U to klmu
-            else: 
-                c += 1 # move on
-        if c == 4:
             if i in "-*":
                 c += 1  # if you find a syllable marker, move on
             else:
                 kle += i  # add rime to left ending
-        if c == 5:
+        if c == 4:
             if i in "-*":
-                mid += i # add middle symbol
+                mid += i  # add middle symbol
             else:
-                c += 1 # and then move on
-        if c == 6:
+                c += 1  # and then move on
+        if c == 5:
             if i in "IU":
                 c += 1  # move on if you hit a medial
             else:
                 krs += i  # otherwise add key to right start
-        if c == 7:
+        if c == 6:
             if i in "I":
-                krmi += i # add I to krmi
+                krmi += i  # add I to krmi
             else:
-                c += 1 # move on
-        if c == 8:
+                c += 1  # move on
+        if c == 7:
             if i in "U":
-                krmu += i # add U to krmu
-            else: 
-                c += 1 # move on
-        if c == 9:
-            kre += i # add remaining keys to right ending
+                krmu += i  # add U to krmu
+            else:
+                c += 1  # move on
+        if c == 8:
+            kre += i  # add remaining keys to right ending
 
     klm = klmi + klmu
     krm = krmi + krmu
@@ -201,44 +217,86 @@ def lookup(key):
         if krf in tones:
             if klf in irregularSyllables:
                 ph = irregularSyllables[klf] + tones[krf]
-            elif klmi == "I":
+            elif klmi != "":
                 if kls in affricateInitials:
-                	if kle = "":
-                		ph = defaultRimes[klf]
-                	else:
-                		ph = palatalInitials[kls] + medials[klmu] + simpleRimes[kle] + tones[krf]
+                    if kle == "":
+                        ph = defaultRimes[klf] + tones [krf]
+                    elif klr in irregularRimes:
+                    	ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
+                    else:
+                        ph = palatalInitials[kls] + medials[klmu] + simpleRimes[kle] + tones[krf]
                 elif klr in irregularRimes:
                     ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
                 else:
                     ph = palatalInitials[kls] + medials[klm] + simpleRimes[kle] + tones[krf]
             elif kle == "":
                 ph = defaultRimes[klf] + tones[krf]
+            elif klr in irregularRimes:
+            	ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
             else:
                 ph = simpleInitials[kls] + medials[klm] + simpleRimes[kle] + tones[krf]
         else:
-        	raise KeyError
+            raise KeyError
     elif klf in irregularSyllables:
         ph = irregularSyllables[klf]
-    elif klmi == "I":
-        if "Z" in kls:
-            ph += palatalInitials[kls]
-            ph += medials[klmu]
-            ph += simpleRimes[kle]
+    elif klmi != "":
+        if kls in affricateInitials:
+        	if kle == "":
+        		ph = defaultRimes[klf]
+        	elif klr in irregularRimes:
+        		ph = palatalInitials[kls] + irregularRimes[klr]
+        	else:
+        		ph = palatalInitials[kls] + medials[klmu] + simpleRimes[kle]
         elif klr in irregularRimes:
-            ph += palatalInitials[kls] 
+            ph += palatalInitials[kls]
             ph += irregularRimes[klr]
         else:
-            ph += palatalInitials[kls] 
+            ph += palatalInitials[kls]
             ph += medials[klm]
             ph += simpleRimes[kle]
-    elif kle == "":
+    elif klr == "":
         ph = defaultRimes[klf]
+    elif klr in irregularRimes:
+    	ph = simpleInitials[kls] + irregularRimes[klr]
     else:
-    	if kls not == "":
-    		ph += simpleInitials[kls]
-    	if klm not == "":
-    		ph += medials[klm] 
-    	if kle not == "":
-    		ph += simpleRimes[kle]
+        if kls != "":
+            ph += simpleInitials[kls]
+        if klmu != "":
+            ph += medials[klmu]
+        if kle != "":
+            ph += simpleRimes[kle]
+
+    if krf != "":
+		if krf in irregularSyllables:
+			ph += irregularSyllables[krf]
+		elif krmi != "":
+			if krs in affricateInitials:
+				if kre == "":
+					ph += defaultRimes[krf]
+				elif krr in irregularRimes:
+					ph += palatalInitials[krs]
+					ph += irregularRimes[krr]
+				else:
+					ph += palatalInitials[krs]
+					ph += medials[krmu]
+					ph += simpleRimes[kre]
+			elif krr in irregularRimes:
+				ph += palatalInitials[krs]
+				ph += irregularRimes[krr]
+			else:
+				ph += palatalInitials[krs]
+				ph += medials[krm]
+				ph += simpleRimes[kre]
+		elif krr == "":
+			ph = defaultRimes[krf]
+		elif krr in irregularRimes:
+			ph = simpleInitials[krs] + irregularRimes[krr]
+		else:
+			if krs != "":
+				ph += simpleInitials[krs]
+			if klmu != "":
+				ph += medials[krmu]
+			if kle != "":
+				ph += simpleRimes[kre]
 
     return " ".join(ph.split())

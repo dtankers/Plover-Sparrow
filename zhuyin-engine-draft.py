@@ -154,6 +154,8 @@ def lookup(key):
     klf = ""
     krf = ""
     mid = ""
+    lh = ""
+    rh = ""
     ph = ""
     c = 0
     nm = 0
@@ -173,7 +175,7 @@ def lookup(key):
             if i in "I":
                 klmi += i  # add I to klmi
             elif i in "U":
-            	klmu += i # add U to klmu
+                klmu += i  # add U to klmu
             else:
                 c += 1  # move on
         if c == 3:
@@ -220,9 +222,9 @@ def lookup(key):
             elif klmi != "":
                 if kls in affricateInitials:
                     if kle == "":
-                        ph = defaultRimes[klf] + tones [krf]
+                        ph = defaultRimes[klf] + tones[krf]
                     elif klr in irregularRimes:
-                    	ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
+                        ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
                     else:
                         ph = palatalInitials[kls] + medials[klmu] + simpleRimes[kle] + tones[krf]
                 elif klr in irregularRimes:
@@ -232,71 +234,75 @@ def lookup(key):
             elif kle == "":
                 ph = defaultRimes[klf] + tones[krf]
             elif klr in irregularRimes:
-            	ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
+                ph = palatalInitials[kls] + irregularRimes[klr] + tones[krf]
             else:
                 ph = simpleInitials[kls] + medials[klm] + simpleRimes[kle] + tones[krf]
         else:
             raise KeyError
-    elif klf in irregularSyllables:
-        ph = irregularSyllables[klf]
-    elif klmi != "":
-        if kls in affricateInitials:
-        	if kle == "":
-        		ph = defaultRimes[klf]
-        	elif klr in irregularRimes:
-        		ph = palatalInitials[kls] + irregularRimes[klr]
-        	else:
-        		ph = palatalInitials[kls] + medials[klmu] + simpleRimes[kle]
-        elif klr in irregularRimes:
-            ph += palatalInitials[kls]
-            ph += irregularRimes[klr]
-        else:
-            ph += palatalInitials[kls]
-            ph += medials[klm]
-            ph += simpleRimes[kle]
-    elif klr == "":
-        ph = defaultRimes[klf]
-    elif klr in irregularRimes:
-    	ph = simpleInitials[kls] + irregularRimes[klr]
-    else:
-        if kls != "":
-            ph += simpleInitials[kls]
-        if klmu != "":
-            ph += medials[klmu]
-        if kle != "":
-            ph += simpleRimes[kle]
 
     if krf != "":
-		if krf in irregularSyllables:
-			ph += irregularSyllables[krf]
-		elif krmi != "":
-			if krs in affricateInitials:
-				if kre == "":
-					ph += defaultRimes[krf]
-				elif krr in irregularRimes:
-					ph += palatalInitials[krs]
-					ph += irregularRimes[krr]
-				else:
-					ph += palatalInitials[krs]
-					ph += medials[krmu]
-					ph += simpleRimes[kre]
-			elif krr in irregularRimes:
-				ph += palatalInitials[krs]
-				ph += irregularRimes[krr]
-			else:
-				ph += palatalInitials[krs]
-				ph += medials[krm]
-				ph += simpleRimes[kre]
-		elif krr == "":
-			ph = defaultRimes[krf]
-		elif krr in irregularRimes:
-			ph = simpleInitials[krs] + irregularRimes[krr]
-		else:
-			if krs != "":
-				ph += simpleInitials[krs]
-			if klmu != "":
-				ph += medials[krmu]
-			if kle != "":
-				ph += simpleRimes[kre]
+        if krf in irregularSyllables:
+            rh += irregularSyllables[krf]
+        elif krmi != "":
+            if krs in affricateInitials:
+                if kre == "":
+                    rh += defaultRimes[krf]
+                elif krr in irregularRimes:
+                    rh += palatalInitials[krs]
+                    rh += irregularRimes[krr]
+                else:
+                    rh += palatalInitials[krs]
+                    rh += medials[krmu]
+                    rh += simpleRimes[kre]
+            elif krr in irregularRimes:
+                rh += palatalInitials[krs]
+                rh += irregularRimes[krr]
+            else:
+                rh += palatalInitials[krs]
+                rh += medials[krm]
+                rh += simpleRimes[kre]
+        elif krr == "":
+            rh = defaultRimes[krf]
+        elif krr in irregularRimes:
+            rh = simpleInitials[krs] + irregularRimes[krr]
+        else:
+            if krs != "":
+                rh += simpleInitials[krs]
+            if krmu != "":
+                rh += medials[krmu]
+            if kle != "":
+                rh += simpleRimes[kre]
+
+    if klf != "":
+	    if klf in irregularSyllables:
+		    lh = irregularSyllables[klf]
+	    elif klmi != "":
+		    if kls in affricateInitials:
+			    if kle == "":
+				    lh = defaultRimes[klf]
+			     elif klr in irregularRimes:
+				     lh = palatalInitials[kls] + irregularRimes[klr]
+			     else:
+				     lh = palatalInitials[kls] + medials[klmu] + simpleRimes[kle]
+		    elif klr in irregularRimes:
+			    lh += palatalInitials[kls]
+			    lh += irregularRimes[klr]
+		    else:
+			    lh += palatalInitials[kls]
+			    lh += medials[klm]
+			    lh += simpleRimes[kle]
+	    elif klr == "":
+		    lh = defaultRimes[klf]
+	    elif klr in irregularRimes:
+		    lh = simpleInitials[kls] + irregularRimes[klr]
+	    else:
+		    if kls != "":
+			    lh += simpleInitials[kls]
+		    if klmu != "":
+			    lh += medials[klmu]
+		    if kle != "":
+			    lh += simpleRimes[kle]
+    
+    ph = lh + rh
 
     return " ".join(ph.split())

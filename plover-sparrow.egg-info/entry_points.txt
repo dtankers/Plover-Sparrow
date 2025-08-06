@@ -1,0 +1,2 @@
+[plover.system]
+Sparrow = plover_sparrow

@@ -1,0 +1,11 @@
+README.md
+plover-sparrow.py
+setup.cfg
+setup.py
+plover-sparrow.egg-info/PKG-INFO
+plover-sparrow.egg-info/SOURCES.txt
+plover-sparrow.egg-info/dependency_links.txt
+plover-sparrow.egg-info/entry_points.txt
+plover-sparrow.egg-info/requires.txt
+plover-sparrow.egg-info/top_level.txt
+plover-sparrow.egg-info/zip-safe

@@ -1,12 +1,12 @@
 Metadata-Version: 0.1
-Name: plover-wagtail
+Name: plover-sparrow
 Version: 0.1.0
-Summary: Wagtail Steno for Mandarin
-Home-page: https://github.com/dtankers/Plover-Wagtail
+Summary: Sparrow Steno for Mandarin
+Home-page: https://github.com/dtankers/Plover-Sparrow
 Author: Devin T
 Author-email: devin.tankersley@gmail.com
 License: UNKNOWN
-Description: # 鶺鴒中文速錄： Plover+Rime 中文速錄輸入法
+Description: # 麻雀中文速錄： Plover 中文速錄輸入法
         
         TODO
         

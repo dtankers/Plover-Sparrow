@@ -87,4 +87,5 @@ DICTIONARIES_ROOT = 'asset:plover_sparrow:dictionaries'
 DEFAULT_DICTIONARIES = (
 	'sparrow-1char.json', 
 	'sparrow-2char.json', 
+	'sparrow-numbers.json',
 	'sparrow-commands.json')
